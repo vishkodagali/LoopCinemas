@@ -1,0 +1,17 @@
+.Bar-Grap-Views-per-movie {
+    margin: 30px auto;
+    max-width: 1000px;
+    width: 90%; 
+    height: 600px; 
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 -3px 6px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.Bar-Grap-Views-per-movie:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2), 0 5px 8px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,353 @@
+/* styles.css */
+
+/* Define colors as CSS variables */
+:root {
+    --primary-color: #4285f4; /* Google blue */
+    --secondary-color: #ea4335; /* Google red */
+    --accent-color: #fbbc05; /* Google yellow */
+    --text-color: #333; /* Dark gray */
+    --background-color: #fff;
+    --highlight-color: #ff8a80; /* Coral red */
+    --link-color: #2196f3; /* Material blue */
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif; /* Change to your preferred font */
+  }
+  
+  /* Add styles to the root element or a wrapper element */
+  #root {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+  }
+  
+  header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  header nav ul li {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  /* Main Content Styles */
+   /* .main-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: var(--background-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  } */
+
+  .main-content {
+    flex: 1; /* Expand to fill available space */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    text-align: center;
+    background-color: var(--background-color); /* Use your background color */
+    padding: 0; /* Remove padding to fill the entire space */
+    margin: 0; /* Remove margin to fill the entire space */
+    box-shadow: none; /* Remove box-shadow */
+  }
+  
+  .main-content h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--highlight-color); /* Apply coral red color to the heading */
+  }
+  
+  .main-content p {
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: var(--text-color); /* Set text color to dark gray */
+  }
+  
+  /* Upcoming Movies Styles */
+  .upcoming-movies {
+    margin-top: 2rem;
+  }
+  
+  .upcoming-movies h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--secondary-color); /* Set heading color to Google red */
+  }
+  
+  .upcoming-movies ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .upcoming-movies li {
+    margin-bottom: 1rem;
+  }
+  
+  .upcoming-movies strong {
+    font-size: 1.2rem;
+    color: var(--link-color); /* Set link color to Material blue */
+    cursor: pointer;
+  }
+  
+  /* Review Styles */
+.review-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .review-modal {
+    background-color: #fff;
+    padding: 2rem;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+  }
+  
+  .review-modal h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    /* color: var(--primary-color); */
+    color: #333;
+  }
+  
+  .review-modal label {
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555; 
+  }
+  
+  .review-modal input[type="number"],
+  .review-modal textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  
+  .review-modal .error {
+    color: #ff0000;
+    margin-bottom: 1rem;
+  }
+  
+  .review-modal button {
+    background-color: #4285f4;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .review-modal button.cancel {
+    background-color: #ccc;
+    margin-right: 1rem;
+    color: #333;
+  }
+  /* EditReviewForm.css */
+
+/* Styles for the modal overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Styles for the modal content (the form) */
+.modal-content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  font-family: Arial, sans-serif;
+
+}
+
+/* Style for buttons in the modal */
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333; /* Dark gray text color */
+}
+
+.modal-content label {
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #555; /* Medium gray text color */
+}
+
+.modal-content input,
+.modal-content textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+
+  .modal-content .button-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+.modal-content button {
+    background-color: #4285f4; /* Google blue */
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+.modal-content button.cancel {
+    background-color: #ccc;
+    margin-right: 1rem;
+    color: #333;
+  }
+
+/* Reviews.css */
+.reviews-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f9f9f9; /* Light gray background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.reviews-page h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #4285f4; /* Google blue */
+}
+
+.review-item {
+  background-color: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.review-item h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #333; /* Dark gray text color */
+}
+
+.review-item p {
+  margin-bottom: 0.5rem;
+  color: #555; /* Medium gray text color */
+}
+
+.review-item button {
+  background-color: #4285f4; /* Google blue */
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.review-item button.cancel {
+  background-color: #ccc;
+  margin-left: 1rem;
+  color: #333;
+}
+
+.my-booked-tickets-container {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .my-booked-tickets-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .no-tickets-message {
+    font-size: 16px;
+    color: #777;
+  }
+  
+  .tickets-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .ticket-item {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+  
+  .ticket-item:last-child {
+    border-bottom: none;
+  }
+  
+

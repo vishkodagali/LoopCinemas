@@ -1,0 +1,54 @@
+.bar-char-tickets-per-movies {
+    margin: 30px auto;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 -3px 6px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.bar-char-tickets-per-movies:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2), 0 5px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table-reservations {
+    margin: 30px auto;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table-reservations thead {
+    background-color: #d92828;
+    color: white;
+}
+
+.table-reservations thead th {
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.table-reservations tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.table-reservations tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.1); 
+}
+
+.table-reservations tbody td {
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.table-reservations tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}

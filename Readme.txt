@@ -1,6 +1,3 @@
-# loop-web-s3904406
-Assignment 2 for Full Stack Development 
-
 # LoopCinema
 
 	Welcome to the Loop Cinema App! 
@@ -108,5 +105,4 @@ Assignment 2 for Full Stack Development
 	- It is also necessary to have the logic in place for giving the user a refund. 
 	- This will include contacting payment gateways in order to start the refund procedure.
 	- Following a successful cancellation, we must then give the user a confirmation email or message.
-
 

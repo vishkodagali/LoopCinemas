@@ -1,0 +1,71 @@
+.book-tickets {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px auto; 
+    max-width: 300px;
+    text-align: center; 
+  }
+  
+  .book-tickets h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .session-selection {
+    margin-bottom: 15px;
+  }
+  
+  .session-selection label {
+    font-weight: bold;
+  }
+  
+  .ticket-count label {
+    font-weight: bold;
+  }
+  
+  .ticket-count input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  
+  .book-tickets-btn{
+    background-color: #ff375f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block; 
+    margin: 0 auto;
+    margin-top: 15px; 
+  }
+
+  .back-tickets-btn{
+    background-color: #ff375f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block; 
+    margin: 0 auto;
+    margin-top: 15px; 
+  }
+  
+  .book-tickets-btn:hover {
+    background-color: #045f27;
+  }
+
+  .back-tickets-btn:hover {
+    background-color: #3d131a;
+  }
+  

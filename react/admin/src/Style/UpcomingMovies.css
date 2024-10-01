@@ -1,0 +1,70 @@
+.carousel {
+    background-color: #000;
+  }
+  
+  .carousel-item img {
+    max-height: 500px; 
+    margin: 0 auto; 
+  }
+  
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .carousel-caption h3 {
+    font-size: 1.5rem; 
+
+  }
+  
+  .carousel-caption p {
+    font-size: 1rem; 
+  }
+  
+
+  .upcoming-movies ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .upcoming-movies li {
+    flex: 0 0 calc(33.333% - 10px); 
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    transition: transform 0.2s ease;
+  }
+  
+  .upcoming-movies li:hover {
+    transform: translateY(-5px);
+  }
+  
+  .upcoming-movies h2 {
+    font-size: 2rem; 
+    margin-bottom: 20px;
+  }
+  
+  .upcoming-movies p {
+    font-size: 1rem;
+  }
+  
+  .upcoming-movies button {
+    background-color: #f00; 
+    color: #fff; 
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+  
+  .upcoming-movies button:hover {
+    background-color: #c00; 
+  }
