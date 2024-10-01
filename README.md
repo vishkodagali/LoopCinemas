@@ -13,7 +13,7 @@
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/rmit-fwp-s2-23/loopcinema.git
+   https://github.com/vishkodagali/LoopCinemas.git
    cd loopcinema
 
 2. Install Dependecies.
