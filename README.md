@@ -1,5 +1,4 @@
-# loop-web-s3904406
-Assignment 2 for Full Stack Development 
+
 
 # LoopCinema
 
